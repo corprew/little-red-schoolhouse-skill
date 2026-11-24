@@ -8,6 +8,11 @@ This skill teaches Claude to write and revise in the reader-centered style of th
 Little Red Schoolhouse (Joseph Williams, Gregory Colomb, Larry McEnerney). It covers problem-framed
 introductions, issue-then-discussion paragraphs, and Williams's sentence principles.
 
+This produces an improvement in AI-generated text, but the actual UChicago LRS is far more powerful and
+subtle than this.  It is worth looking into that course's materials and methods more closely if you find
+this vague handwaving at its lessons useful.  Thinking about the needs and information behavior of your
+reader is a powerful tool for improving your communication.
+
 ## Install
 
 ### Claude Code (plugin marketplace)
