@@ -71,7 +71,7 @@ discussion: evidence, reasoning, detail.
   opaque origins"), not just label topics ("Origin handling").
 - **Notes, warnings and caveats need a cost too.** A maintenance note, a "keep this in sync" box or a
   caveat is an instruction the reader will skip unless it says what goes wrong when they ignore it
-  ("If the two drift apart, admins will advise firms on rules the product no longer follows"). Open it
+  ("If the two drift apart, the docs will promise limits the API no longer enforces"). Open it
   with the instruction, give the cost, and turn a long inline run of file paths or conditions into a
   list the reader can check against their change.
 
