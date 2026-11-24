@@ -151,23 +151,22 @@ moves ("Destabilizing condition:"). The moves should be felt, not named.
 
 **Before** (organized in the order the writer thought):
 
-> This document describes the authentication architecture. The platform uses Better Auth with three
-> instances: Client, Firm, and Admin. Each instance has its own session cookie. An analysis of the
-> cookie configuration was performed, and it was determined that firm hosts are same-site with the
-> admin host.
+> This document describes the backup system. The service takes a nightly snapshot of the primary
+> database. Snapshots are stored in the same region as the database. A review of the restore process
+> was conducted, and it was found that no restore has been tested since the storage migration.
 
 **After**:
 
-> Each of our three audiences signs in through its own Better Auth instance, so we have assumed their
-> sessions are isolated. But firm hosts are same-site with the admin host, so the admin's Lax cookie
-> rides along on requests a firm page makes. Unless every admin route rejects cross-site requests, a
-> malicious firm page could act with an admin's session. This document shows how the CSRF guard closes
-> that gap and what a new route must do to stay inside it.
+> We snapshot the primary database every night, so we have assumed we can recover if we lose it. But
+> the snapshots live in the same region as the database, and no one has tested a restore since the
+> storage migration. If that region fails, or a restore fails when we need it, we could lose the
+> database and its backups together. This document proposes copying snapshots to a second region and
+> testing a restore every month.
 
 The revision opens with what readers believe (shared context), breaks it with *but* (instability),
-names the consequence (an admin session misused), and ends the introduction with the point. Its
-subjects are actors ("we", "the admin's cookie", "a malicious firm page", "this document"), and the
-nominalized "an analysis… was performed, and it was determined" is gone.
+names the consequence (the data and its backups lost together), and ends the introduction with the
+point. Its subjects are actors ("we", "the snapshots", "no one", "this document"), and the nominalized
+"a review… was conducted, and it was found" is gone.
 
 ## Sources
 
