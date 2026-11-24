@@ -1,0 +1,8 @@
+{
+  "name": "little-red-schoolhouse",
+  "version": "1.0.0",
+  "description": "Write or rewrite prose in the reader-centered, problem-framed style of the University of Chicago's Little Red Schoolhouse (Williams, Colomb, McEnerney).",
+  "author": { "name": "Corprew Reed" },
+  "license": "MIT",
+  "keywords": ["writing", "style", "prose", "editing", "little-red-schoolhouse", "uchicago"]
+}

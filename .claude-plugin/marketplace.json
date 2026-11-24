@@ -1,0 +1,15 @@
+{
+  "name": "little-red-schoolhouse-skill",
+  "owner": { "name": "Corprew Reed" },
+  "metadata": {
+    "description": "The Little Red Schoolhouse writing skill for Claude: reader-centered, problem-framed prose.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "little-red-schoolhouse",
+      "source": "./",
+      "description": "Reader-centered, problem-framed writing in the Little Red Schoolhouse style."
+    }
+  ]
+}
